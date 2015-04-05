@@ -1,0 +1,31 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CarnivoreObject.cs">
+    <Files>
+      <File FileName="Assets/MoveObject.cs" Line="22" Column="35" />
+      <File FileName="Assets/PlantObject.cs" Line="18" Column="3" />
+      <File FileName="Assets/HerbivoreObject.cs" Line="12" Column="3" />
+      <File FileName="Assets/CarnivoreObject.cs" Line="16" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="CarnivoreObject.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>nextScene</Value>
+          <Value>GameObject</Value>
+          <Value>Application</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
