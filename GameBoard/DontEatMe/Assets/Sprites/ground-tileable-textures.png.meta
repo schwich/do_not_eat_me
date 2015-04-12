@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 57e17abf65965483fab77c86433e1794
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ground-tileable-textures_0
+    21300002: ground-tileable-textures_1
+    21300004: ground-tileable-textures_2
+    21300006: ground-tileable-textures_3
+    21300008: ground-tileable-textures_4
+    21300010: ground-tileable-textures_5
+    21300012: ground-tileable-textures_6
+    21300014: ground-tileable-textures_7
+    21300016: ground-tileable-textures_8
+    21300018: ground-tileable-textures_9
+    21300020: ground-tileable-textures_10
+    21300022: ground-tileable-textures_11
+    21300024: ground-tileable-textures_12
+    21300026: ground-tileable-textures_13
+    21300028: ground-tileable-textures_14
+    21300030: ground-tileable-textures_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1417
+        width: 379
+        height: 379
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 2, w: 6}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1408
+        width: 380
+        height: 382
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ground-tileable-textures_2
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1407
+        width: 384
+        height: 384
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 7, y: 5, z: 4, w: 8}
+    - name: ground-tileable-textures_3
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1407
+        width: 384
+        height: 384
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ground-tileable-textures_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 965
+        width: 384
+        height: 378
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 6, y: 0, z: 3, w: 3}
+    - name: ground-tileable-textures_5
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 961
+        width: 384
+        height: 384
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 1, w: 0}
+    - name: ground-tileable-textures_6
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 959
+        width: 384
+        height: 384
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 4, y: 2, z: 0, w: 1}
+    - name: ground-tileable-textures_7
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 963
+        width: 384
+        height: 384
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 6, y: 6, z: 3, w: 7}
+    - name: ground-tileable-textures_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 511
+        width: 379
+        height: 384
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 5, y: 8, z: 3, w: 4}
+    - name: ground-tileable-textures_9
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 508
+        width: 378
+        height: 384
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 6, z: 2, w: 0}
+    - name: ground-tileable-textures_10
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 511
+        width: 384
+        height: 384
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 5, y: 2, z: 0, w: 2}
+    - name: ground-tileable-textures_11
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 516
+        width: 375
+        height: 379
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 5, y: 3, z: 4, w: 6}
+    - name: ground-tileable-textures_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 63
+        width: 384
+        height: 384
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 5, y: 3, z: 3, w: 7}
+    - name: ground-tileable-textures_13
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 66
+        width: 379
+        height: 380
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ground-tileable-textures_14
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 66
+        width: 380
+        height: 380
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 1}
+    - name: ground-tileable-textures_15
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 66
+        width: 379
+        height: 379
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 9}
+  spritePackingTag: 
+  userData: 
