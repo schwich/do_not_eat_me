@@ -13,11 +13,13 @@ public class BuildMenu : MonoBehaviour {
 	public BuildInfo[] plants;
 
 	void OnGUI() {
-		GUILayout.BeginArea (new Rect (Screen.width / 2 - 100, 50, 200, 400));
-		GUILayout.BeginHorizontal ("box");
+		GUILayout.BeginArea (new Rect (20, 100, 50, 300));
+		GUILayout.BeginVertical ("box");
 
 		// Draw each plant's build info
 		foreach (BuildInfo info in plants) {
+			Debug.Log (info);
+			Debug.Log (plants);
 			GUI.enabled = currentResources >= info.price;
 			if (GUILayout.Button(new GUIContent(info.price.ToString(), info.previewImage))) currentlyBuilding = info;
 			//if (GUILayout.Button(new GUIContent(info.price.ToString(), "grass and herbs"))) currentlyBuilding = info;
