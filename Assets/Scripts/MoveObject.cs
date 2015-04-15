@@ -9,19 +9,28 @@ public class MoveObject : MonoBehaviour {
 	protected enum GAME_TYPE : int {Plant = 0, Herbivore = 1, Carnivore = 2};
 	protected int objectType;
 
+	// Current Health
+	[SerializeField]
+	int speciesId = 0;
+
 	// Use this for initialization
 	public virtual void Start () {
+	
+		/*
 		gameCamera = GameObject.Find("MainCamera").camera;
 		/*print (gameObject.name);
 		print (gameObject.GetInstanceID ());
 		this.obj = GameObject.Find (gameObject.name);
 		this.obj = GameObject.Find (gameObject.name);*/
+		/*
 		mouseDown = false;
+*/
 	}
 	
 	// Update is called once per frame
 	public virtual void Update () {
 
+		/*
 		//Update object position to pos
 		if (mouseDown) {
 			Vector3 pos = gameCamera.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x,
@@ -29,6 +38,7 @@ public class MoveObject : MonoBehaviour {
 
 			obj.transform.position = new Vector3 (pos.x, pos.y, 0);
 		}
+		*/
 
 	}
 
@@ -38,6 +48,10 @@ public class MoveObject : MonoBehaviour {
 
 	public int GetObjectType() {
 		return objectType;
+	}
+
+	public int GetSpeciesId() {
+		return speciesId;
 	}
 
 	private string GetTagFromObjectType(int type) {
@@ -73,13 +87,20 @@ public class MoveObject : MonoBehaviour {
 	}
 
 	public virtual void OnMouseDown() {
+		/*
+
 		this.obj = FindClosestType ();
 		if (this.obj != null) {
 			mouseDown = true;
 		}
+
+*/
 	}
 
 	public virtual void OnMouseUp() {
+
+		/*
 		mouseDown = false;
+		*/
 	}
 }
