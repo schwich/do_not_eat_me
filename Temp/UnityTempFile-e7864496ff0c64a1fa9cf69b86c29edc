@@ -50,7 +50,6 @@
 'Assets/Scripts/Grass.cs'
 'Assets/Scripts/Health.cs'
 'Assets/Scripts/HerbivoreObject.cs'
-'Assets/Scripts/Hunger_Predator.cs'
 'Assets/Scripts/MoveObject.cs'
 'Assets/Scripts/PlantObject.cs'
 'Assets/Scripts/Predator_Hunger.cs'

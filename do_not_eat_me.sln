@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{14EF39A5-5A4C-F3E4-0274-E54D17835C23}") = "ShitGameBoard", "Assembly-CSharp.csproj", "{664A5A8E-23C2-8E42-6B4F-C8410107B957}"
+Project("{7AC4BDFA-145E-EBBC-D2F9-7EDF814BE5CC}") = "do_not_eat_me", "Assembly-CSharp.csproj", "{2D4413FA-FE06-C87D-B116-F92F69E4183A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{664A5A8E-23C2-8E42-6B4F-C8410107B957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{664A5A8E-23C2-8E42-6B4F-C8410107B957}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{664A5A8E-23C2-8E42-6B4F-C8410107B957}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{664A5A8E-23C2-8E42-6B4F-C8410107B957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4413FA-FE06-C87D-B116-F92F69E4183A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4413FA-FE06-C87D-B116-F92F69E4183A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4413FA-FE06-C87D-B116-F92F69E4183A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4413FA-FE06-C87D-B116-F92F69E4183A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-									GlobalSection(MonoDevelopProperties) = preSolution
+	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -36,5 +36,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal

@@ -32,7 +32,7 @@ public class BuildMenu : MonoBehaviour {
 		GUILayout.EndArea ();
 
 		// draw the plant menu
-		GUILayout.BeginArea (new Rect (20, 100, 50, 300));
+		GUILayout.BeginArea (new Rect (40, 200, 100, 400));
 		GUILayout.BeginVertical ("box");
 
 		// Draw each plant's build info
@@ -47,7 +47,7 @@ public class BuildMenu : MonoBehaviour {
 		GUILayout.EndArea ();
 
 		// Now, draw prey menu
-		GUILayout.BeginArea (new Rect (200, 10, 300, 100));
+		GUILayout.BeginArea (new Rect (300, 120, 500, 220));
 		GUILayout.BeginHorizontal ("box");
 
 		// draw each prey's build info
