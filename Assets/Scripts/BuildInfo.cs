@@ -10,6 +10,7 @@ public class BuildInfo : MonoBehaviour {
 	[SerializeField]
 	int speciesId = 0;
 
+
 	int GetSpeciesId() {
 		return speciesId;
 	}
@@ -26,4 +27,6 @@ public class BuildInfo : MonoBehaviour {
 	void Update () {
 	
 	}
+
+
 }
