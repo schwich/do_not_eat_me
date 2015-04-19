@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\BuildMenu.cs" />
      <Compile Include="Assets\Scripts\CarnivoreObject.cs" />
      <Compile Include="Assets\Scripts\DefaultVelocity.cs" />
+     <Compile Include="Assets\Scripts\GameOverWall.cs" />
      <Compile Include="Assets\Scripts\Grass.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\HerbivoreObject.cs" />
