@@ -12,6 +12,9 @@ public class BuildMenu : MonoBehaviour {
 	// Player's current resource amount
 	public static int currentResources = 100;
 
+	//Player's current score
+	public static int score = 0;
+
 	// Plant prefabs
 	public BuildInfo[] plants;
 
@@ -75,6 +78,7 @@ public class BuildMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Debug.Log ("Curent score is " + score);
 	
 	}
 }

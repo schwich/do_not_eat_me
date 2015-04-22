@@ -12,6 +12,7 @@ public class Grass : MonoBehaviour {
 			// Build it
 			Instantiate(BuildMenu.currentlyBuilding.gameObject, transform.position, Quaternion.identity);
 			BuildMenu.currentResources -= BuildMenu.currentlyBuilding.price;
+			BuildMenu.score += BuildMenu.currentlyBuilding.price;
 			BuildMenu.currentlyBuilding = null;
 		}
 	}
@@ -33,14 +34,14 @@ public class Grass : MonoBehaviour {
 		}
 		
 		
-		renderer.material.color = Color.yellow;
+		GetComponent<Renderer>().material.color = Color.yellow;
 		
 	}
 	
 	void OnMouseExit() {
 		if(!tileSelected) {
 			//White resets to original color
-			renderer.material.color = Color.white;
+			GetComponent<Renderer>().material.color = Color.white;
 		}
 	}
 }

@@ -7,7 +7,7 @@ public class DefaultVelocity : MonoBehaviour {
 	public Vector2 velocity;
 
 	void FixedUpdate() {
-		rigidbody2D.velocity = velocity;
+		GetComponent<Rigidbody2D>().velocity = velocity;
 	}
 
 	// Use this for initialization
