@@ -13,6 +13,8 @@ public class SpawnPredator : MonoBehaviour
 	Vector3 spawnPointOne;
 	Vector3 spawnPointTwo;
 	Vector3 spawnPointThree;
+
+
 	
 	// Use this for initialization
 	void Start ()
@@ -35,6 +37,7 @@ public class SpawnPredator : MonoBehaviour
 		spawnPointThree.z = 0f;
 
 		GameObject spawnedPredator;
+
 
 		Vector3 currSpawnPoint;
 		if (spawnLevel == 1) {
@@ -86,6 +89,17 @@ public class SpawnPredator : MonoBehaviour
 		nextSpawn = 0;
 		maxIndex = spawnArray.GetLength (0);
 
+		HintBoard hintBoardScript;
+		GameObject hintBoard;
+
+	
+
+
+		
+		hintBoard = GameObject.Find ("HintBoard");
+		hintBoardScript = hintBoard.GetComponent<HintBoard>();
+
+
 		while(currIndex < maxIndex)
 		{
 			nextSpawn = spawnArray[currIndex,0];
@@ -95,6 +109,13 @@ public class SpawnPredator : MonoBehaviour
 
 			//Set hint screen to image
 
+			if (spawnOne != 0) {
+				hintBoardScript.setNextPredator(spawnOne);
+			} else if (spawnTwo != 0) {
+				hintBoardScript.setNextPredator(spawnTwo);
+			} else if (spawnThree != 0) {
+				hintBoardScript.setNextPredator(spawnThree);
+			}
 
 			yield return new WaitForSeconds(nextSpawn); // wait x seconds
 			Debug.Log ("Waited " + nextSpawn + " seconds!");
