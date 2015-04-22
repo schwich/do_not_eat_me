@@ -92,6 +92,10 @@ public class SpawnPredator : MonoBehaviour
 			spawnOne = spawnArray[currIndex,1];
 			spawnTwo = spawnArray[currIndex,2];
 			spawnThree = spawnArray[currIndex,3];
+
+			//Set hint screen to image
+
+
 			yield return new WaitForSeconds(nextSpawn); // wait x seconds
 			Debug.Log ("Waited " + nextSpawn + " seconds!");
 
@@ -100,7 +104,7 @@ public class SpawnPredator : MonoBehaviour
 					createCreature(i, spawnArray[currIndex,i]);
 				}
 			}
-			currIndex++;
+			currIndex++; //Move onto next predator
 		}
 
 		//No more predators, Win game!
