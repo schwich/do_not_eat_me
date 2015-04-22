@@ -7,6 +7,9 @@ public class GameOverWall : MonoBehaviour
 
 	GUIStyle largeFont;
 
+
+	GameObject spawnPredator;
+	SpawnPredator spawnPredatorScript;
 	void OnCollisionStay2D(Collision2D collision) {
 		
 		Debug.Log ("Hit gameover wall!");
@@ -27,6 +30,12 @@ public class GameOverWall : MonoBehaviour
 	void OnGUI() {
 
 		if (GameIsOver) {
+
+	  		spawnPredator = GameObject.Find ("PredatorSpawner");
+			spawnPredatorScript = spawnPredator.GetComponent<SpawnPredator>();
+	
+			spawnPredatorScript.stopRunTime();
+
 			// draw resource menu
 			GUILayout.BeginArea (new Rect (350, 350, 600, 600));
 			GUILayout.BeginHorizontal ("box");

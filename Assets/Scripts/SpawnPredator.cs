@@ -14,9 +14,33 @@ public class SpawnPredator : MonoBehaviour
 	Vector3 spawnPointTwo;
 	Vector3 spawnPointThree;
 
+	float time = 0;
 
-	
-	// Use this for initialization
+	bool gameOver = false;
+
+	/*
+	 * hintBoard = GameObject.Find ("HintBoard");
+		hintBoardScript = hintBoard.GetComponent<HintBoard>();
+		Acquire object like this.
+	 * */
+
+	void Update()
+	{
+		if (!gameOver) {
+			time += Time.deltaTime;
+			Debug.Log (time);
+		}
+	}
+
+	public float getRunTime() {
+		return time;
+	}
+
+	public void stopRunTime() {
+		gameOver = true;
+	}
+
+
 	void Start ()
 	{
 
