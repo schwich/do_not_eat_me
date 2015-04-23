@@ -14,7 +14,11 @@ public class Predator_Hunger : MonoBehaviour {
 	// the value that the predator eats each time they eat a prey
 	[SerializeField]
 	int amountToEatPerTick = 20;
-	
+
+	Health currentHP;
+
+	public bool isHunger = false;
+
 	public void Eat() {
 		
 	}
@@ -29,10 +33,18 @@ public class Predator_Hunger : MonoBehaviour {
 		// Collided with a prey? Eat it, yo
 		if (collision.gameObject.tag == "Herbivore") {
 			// Eat once a second
+			isHunger = false;
+			//GetComponent<Animator>().SetTrigger("isHunger");
 			if (Time.time - last >= 1) {
-				
-				collision.gameObject.GetComponent<Health>().lowerHealth(amountToEatPerTick);
+				currentHP = collision.gameObject.GetComponent<Health>();
+				currentHP.lowerHealth(amountToEatPerTick);
+				if(currentHP.eaten == true){
+					isHunger = true;
+					transform.position += new Vector3(3,0,0);
+				}
+
 				hunger += amountToEatPerTick;
+				//Debug.Log("hunger is " + hunger);
 				last = Time.time;
 				
 				if (hunger >= fullHungerValue) {
@@ -49,6 +61,12 @@ public class Predator_Hunger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(isHunger == true){
+			GetComponent<Animator>().SetTrigger("isHunger");
+		}
+
+		if(isHunger == false){
+			GetComponent<Animator>().SetTrigger("notThatHunger");
+		}
 	}
 }
