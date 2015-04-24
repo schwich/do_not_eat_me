@@ -3,15 +3,20 @@ using System.Collections;
 
 public class Grass : MonoBehaviour {
 
-	bool tileSelected = false;
-
+	// hold a reference to the game object placed on top of soil
+	public GameObject currentlyPlacedPiece = null;
 
 	void OnMouseUpAsButton() {
 		// Is there something to build?
 		if (BuildMenu.currentlyBuilding != null) {
-			// Build it
-			Instantiate(BuildMenu.currentlyBuilding.gameObject, transform.position, Quaternion.identity);
+
+			// is it a prey? you can't build plants on the grass
+			if (BuildMenu.currentlyBuilding.gameObject.tag != "Herbivore") return;
+
+			// Build it and hold a reference to the newly created gamepiece
+			currentlyPlacedPiece = (GameObject) Instantiate(BuildMenu.currentlyBuilding.gameObject, transform.position, Quaternion.identity);
 			BuildMenu.currentResources -= BuildMenu.currentlyBuilding.price;
+
 			BuildMenu.currentlyBuilding = null;
 		}
 	}
@@ -27,20 +32,10 @@ public class Grass : MonoBehaviour {
 	}
 
 	void OnMouseOver () {
-		if(Input.GetMouseButtonDown(0)) {
-			tileSelected = true;
-			Debug.Log(transform.position);
-		}
-		
-		
 		renderer.material.color = Color.yellow;
-		
 	}
 	
 	void OnMouseExit() {
-		if(!tileSelected) {
-			//White resets to original color
-			renderer.material.color = Color.white;
-		}
+		renderer.material.color = Color.white;
 	}
 }

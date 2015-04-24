@@ -28,7 +28,7 @@ public class SpawnPredator : MonoBehaviour
 	{
 		if (!gameOver) {
 			time += Time.deltaTime;
-			Debug.Log (time);
+			//Debug.Log (time);
 		}
 	}
 
@@ -107,7 +107,7 @@ public class SpawnPredator : MonoBehaviour
 										{30, 5, 0, 0},
 										{45, 0, 0, 1}};
 		
-		Debug.Log (spawnArray);
+		//Debug.Log (spawnArray);
 		
 		currIndex = 0;
 		nextSpawn = 0;
@@ -142,7 +142,7 @@ public class SpawnPredator : MonoBehaviour
 			}
 
 			yield return new WaitForSeconds(nextSpawn); // wait x seconds
-			Debug.Log ("Waited " + nextSpawn + " seconds!");
+			//Debug.Log ("Waited " + nextSpawn + " seconds!");
 
 			for (int i = 1; i < 4; i++) {
 				if (spawnArray[currIndex,i] != 0) {
