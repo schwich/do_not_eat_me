@@ -31,8 +31,9 @@ public class Soil : MonoBehaviour {
 	
 	}
 
+	// highlight the soil with green when the player mouses over it
 	void OnMouseOver () {
-		renderer.material.color = Color.yellow;	
+		renderer.material.color = Color.green;	
 	}
 	
 	void OnMouseExit() {

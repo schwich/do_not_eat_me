@@ -42,8 +42,6 @@ public class Predator_Hunger : MonoBehaviour {
 				}
 			}
 		}
-
-		Debug.Log ("WHAT!?");
 	}
 	
 	// Use this for initialization
