@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Grass.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\HerbivoreObject.cs" />
+     <Compile Include="Assets\Scripts\HintBoard.cs" />
      <Compile Include="Assets\Scripts\MoveObject.cs" />
      <Compile Include="Assets\Scripts\PlantObject.cs" />
      <Compile Include="Assets\Scripts\Predator_Hunger.cs" />
