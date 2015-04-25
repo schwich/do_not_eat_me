@@ -30,6 +30,8 @@ public class Predator_Hunger : MonoBehaviour {
 		if (collision.gameObject.tag == "Herbivore") {
 			// Eat once a second
 			if (Time.time - last >= 1) {
+
+				Debug.Log ("Eating herbivore");
 				
 				collision.gameObject.GetComponent<Health>().lowerHealth(amountToEatPerTick);
 				hunger += amountToEatPerTick;

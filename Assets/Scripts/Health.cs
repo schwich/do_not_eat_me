@@ -15,6 +15,7 @@ public class Health : MonoBehaviour {
 
 		// Destroy object if health is depleted to 0
 		if (currentHealth <= 0) {
+
 			Destroy(gameObject);
 			Debug.Log(gameObject.ToString() + " has been eaten");
 		}
