@@ -8,6 +8,9 @@ public class Prey_Hunger : MonoBehaviour {
 	// last eat time
 	float last = 0;
 
+	// last plant eat time
+	int lastPlantEatTime = 0;
+
 	// the value that the herbivore eats every tick
 	[SerializeField]
 	int amountToEatPerTick = 5;
@@ -18,6 +21,8 @@ public class Prey_Hunger : MonoBehaviour {
 	public void Eat() {
 		// Eat once a second
 		if (isPreyEating) {
+
+			lastPlantEatTime = 0;
 			
 			Debug.Log ("Herbivore eating plant");
 
@@ -29,6 +34,12 @@ public class Prey_Hunger : MonoBehaviour {
 
 			}
 		} else {
+
+			lastPlantEatTime++;
+			if (lastPlantEatTime >= 6) {
+				Debug.Log ("herbivore wandered away");
+				Destroy (gameObject);
+			}
 
 		}	
 	}
