@@ -53,6 +53,7 @@ public class Predator_Hunger : MonoBehaviour {
 				last = Time.time;
 				
 				if (hunger >= fullHungerValue) {
+					BuildMenu.score += fullHungerValue;
 					Destroy(gameObject);
 				}
 			}

@@ -12,6 +12,9 @@ public class BuildMenu : MonoBehaviour {
 	// Player's current resource amount
 	public static int currentResources = 100;
 
+	//Player's current score amount
+	public static int score = 0;
+
 	// Plant prefabs
 	public BuildInfo[] plants;
 
@@ -28,6 +31,17 @@ public class BuildMenu : MonoBehaviour {
 		GUILayout.Button (new GUIContent ("Resources: " + currentResources.ToString ()), GUILayout.Height(70));
 
 		// end GUI for resource menu
+		GUILayout.EndHorizontal ();
+		GUILayout.EndArea ();
+
+		// draw score menu
+		GUILayout.BeginArea (new Rect (800, 90, 155, 200));
+		GUILayout.BeginHorizontal ("box");
+		
+		// draw score counter
+		GUILayout.Button (new GUIContent ("Score: " + score.ToString ()), GUILayout.Height(70));
+		
+		// end GUI for score menu
 		GUILayout.EndHorizontal ();
 		GUILayout.EndArea ();
 

@@ -24,6 +24,8 @@ public class Grass : MonoBehaviour {
 
 			// reduce the player's resources by the price of the game piece just construsted
 			BuildMenu.currentResources -= BuildMenu.currentlyBuilding.price;
+			// Add the price of the game piece onto the score
+			BuildMenu.score += BuildMenu.currentlyBuilding.price;
 
 			// give the currently placed piece a reference to this tile
 			if (currentlyPlacedPiece != null && pairedSoil != null) {

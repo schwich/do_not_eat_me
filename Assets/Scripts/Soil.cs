@@ -16,6 +16,8 @@ public class Soil : MonoBehaviour {
 			// Build it and hold a reference to the newly created game piece
 			currentlyPlacedPiece = (GameObject) Instantiate(BuildMenu.currentlyBuilding.gameObject, transform.position, Quaternion.identity);
 			BuildMenu.currentResources -= BuildMenu.currentlyBuilding.price;
+			// Add the price of the game piece onto the score
+			BuildMenu.score += BuildMenu.currentlyBuilding.price;
 
 			BuildMenu.currentlyBuilding = null;
 		}
