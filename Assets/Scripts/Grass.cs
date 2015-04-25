@@ -36,7 +36,7 @@ public class Grass : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GameObject foundSoil = GameObject.FindGameObjectWithTag ("UL_SOIL");
+		GameObject foundSoil = GameObject.FindGameObjectWithTag (pairedSoilTag);
 		pairedSoil = foundSoil.transform.parent.gameObject;
 	}
 	
