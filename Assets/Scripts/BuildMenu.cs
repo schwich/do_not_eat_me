@@ -21,18 +21,18 @@ public class BuildMenu : MonoBehaviour {
 	void OnGUI() {
 
 		// draw resource menu
-		GUILayout.BeginArea (new Rect (10, 10, 50, 200));
+		GUILayout.BeginArea (new Rect (150, 90, 155, 200));
 		GUILayout.BeginHorizontal ("box");
 
 		// draw resource counter
-		GUILayout.Button (new GUIContent (currentResources.ToString ()), GUILayout.Height(70));
+		GUILayout.Button (new GUIContent ("Resources: " + currentResources.ToString ()), GUILayout.Height(70));
 
 		// end GUI for resource menu
 		GUILayout.EndHorizontal ();
 		GUILayout.EndArea ();
 
 		// draw the plant menu
-		GUILayout.BeginArea (new Rect (40, 200, 100, 400));
+		GUILayout.BeginArea (new Rect (40, 165, 100, 400));
 		GUILayout.BeginVertical ("box");
 
 		// Draw each plant's build info
@@ -47,7 +47,7 @@ public class BuildMenu : MonoBehaviour {
 		GUILayout.EndArea ();
 
 		// Now, draw prey menu
-		GUILayout.BeginArea (new Rect (300, 120, 500, 220));
+		GUILayout.BeginArea (new Rect (300, 90, 500, 220));
 		GUILayout.BeginHorizontal ("box");
 
 		// draw each prey's build info
