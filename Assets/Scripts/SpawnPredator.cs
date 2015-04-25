@@ -116,9 +116,6 @@ public class SpawnPredator : MonoBehaviour
 		HintBoard hintBoardScript;
 		GameObject hintBoard;
 
-	
-
-
 		
 		hintBoard = GameObject.Find ("HintBoard");
 		hintBoardScript = hintBoard.GetComponent<HintBoard>();
