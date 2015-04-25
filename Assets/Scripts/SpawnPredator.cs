@@ -121,7 +121,7 @@ public class SpawnPredator : MonoBehaviour
 		hintBoardScript = hintBoard.GetComponent<HintBoard>();
 
 
-		while(currIndex < maxIndex)
+		while(currIndex < maxIndex && !gameOver)
 		{
 			nextSpawn = spawnArray[currIndex,0];
 			spawnOne = spawnArray[currIndex,1];
@@ -140,13 +140,14 @@ public class SpawnPredator : MonoBehaviour
 
 			yield return new WaitForSeconds(nextSpawn); // wait x seconds
 			//Debug.Log ("Waited " + nextSpawn + " seconds!");
-
-			for (int i = 1; i < 4; i++) {
-				if (spawnArray[currIndex,i] != 0) {
-					createCreature(i, spawnArray[currIndex,i]);
+			if (!gameOver) {
+				for (int i = 1; i < 4; i++) {
+					if (spawnArray[currIndex,i] != 0) {
+						createCreature(i, spawnArray[currIndex,i]);
+					}
 				}
+				currIndex++; //Move onto next predator
 			}
-			currIndex++; //Move onto next predator
 		}
 
 		//No more predators, Win game!

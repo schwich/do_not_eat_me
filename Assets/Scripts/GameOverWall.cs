@@ -7,14 +7,24 @@ public class GameOverWall : MonoBehaviour
 
 	GUIStyle largeFont;
 
-
+	
 	GameObject spawnPredator;
 	SpawnPredator spawnPredatorScript;
+
 	void OnCollisionStay2D(Collision2D collision) {
-		
-		Debug.Log ("Hit gameover wall!");
-		GameIsOver = true;
+		LostGame ();
 	
+	}
+
+	public void LostGame() {
+		
+		GameIsOver = true;
+		
+		GameObject predatorSpawner = GameObject.Find ("PredatorSpawner");
+		spawnPredatorScript = predatorSpawner.GetComponent<SpawnPredator>();
+		
+		spawnPredatorScript.stopRunTime ();
+
 	}
 
 	void Start () 
