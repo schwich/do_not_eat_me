@@ -21,11 +21,11 @@ public class BuildMenu : MonoBehaviour {
 	void OnGUI() {
 
 		// draw resource menu
-		GUILayout.BeginArea (new Rect (10, 10, 50, 50));
+		GUILayout.BeginArea (new Rect (10, 10, 50, 200));
 		GUILayout.BeginHorizontal ("box");
 
 		// draw resource counter
-		GUILayout.Button (new GUIContent (currentResources.ToString ()));
+		GUILayout.Button (new GUIContent (currentResources.ToString ()), GUILayout.Height(70));
 
 		// end GUI for resource menu
 		GUILayout.EndHorizontal ();
