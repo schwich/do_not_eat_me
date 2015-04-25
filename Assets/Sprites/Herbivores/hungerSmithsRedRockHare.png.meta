@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: e54081287b6604694935eb199d23e25e
+guid: bcf40ae2365cb435e9d7e2fa3aff269f
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: hungerSmithsRedRockHare_0
+    21300002: hungerSmithsRedRockHare_1
+    21300004: hungerSmithsRedRockHare_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -42,6 +45,36 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: hungerSmithsRedRockHare_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hungerSmithsRedRockHare_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hungerSmithsRedRockHare_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

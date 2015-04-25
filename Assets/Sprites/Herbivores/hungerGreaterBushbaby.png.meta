@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: e54081287b6604694935eb199d23e25e
+guid: 8634c7fe1f12943cabfdd8a6251588f6
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: hungerGreaterBushbaby_0
+    21300002: hungerGreaterBushbaby_1
+    21300004: hungerGreaterBushbaby_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -42,6 +45,36 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: hungerGreaterBushbaby_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hungerGreaterBushbaby_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hungerGreaterBushbaby_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

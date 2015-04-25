@@ -21,12 +21,16 @@ public class Prey_Hunger : MonoBehaviour {
 			
 			Debug.Log ("Herbivore eating plant");
 
+			GetComponent<Animator>().SetTrigger("hasPlant");
+
 			if (Time.time - last >= 1) {
-				soilWithPlant.GetComponent<Soil>().currentlyPlacedPiece.GetComponent<Health>().lowerHealth(amountToEatPerTick);
+				soilWithPlant.GetComponent<Soil> ().currentlyPlacedPiece.GetComponent<Health> ().lowerHealth (amountToEatPerTick);
 				last = Time.time;
 
 			}
-		}
+		} else {
+
+		}	
 	}
 
 	// Use this for initialization
@@ -42,10 +46,14 @@ public class Prey_Hunger : MonoBehaviour {
 			// this flag controls whether or not the herbivore trys to eat
 			// will only eat when there is a plant to eat on the soil
 			if (!isPreyEating) {
+				GetComponent<Animator>().SetTrigger("hasPlant");
+				Debug.Log ("is prey eating");
+
 				isPreyEating = true;
 			}
 		} else {
 			isPreyEating = false;
+			GetComponent<Animator>().SetTrigger("herbHunger");
 		}
 	}
 }
