@@ -11,7 +11,7 @@ public class BuildInfo : MonoBehaviour {
 	int speciesId = 0;
 
 
-	int GetSpeciesId() {
+  public int GetSpeciesId() {
 		return speciesId;
 	}
 
