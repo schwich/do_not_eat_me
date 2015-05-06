@@ -21,6 +21,8 @@ public class BuildMenu : MonoBehaviour {
 	// Prey prefabs
 	public BuildInfo[] prey;
 
+	int coins = 0;
+
 	void OnGUI() {
 
 		// draw resource menu
@@ -86,7 +88,21 @@ public class BuildMenu : MonoBehaviour {
 		InvokeRepeating ("increaseResources", 2, 3.0F);
 
 	}
-	
+
+	public void CalculateCoins() {
+		int newCoins = (score / 100);
+
+		int numCoinsToDrop = newCoins - coins;
+
+		dropCoins (numCoinsToDrop);
+	}
+
+	void dropCoins(int numCoins) {
+		//Drop numCoins from screen
+		Debug.Log ("DropCoins: " + numCoins);
+
+	}
+
 	// Update is called once per frame
 	void Update () {
 	
