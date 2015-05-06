@@ -1,16 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BuildMenu.cs">
     <Files>
-      <File FileName="Assets/Scripts/Prey_Hunger.cs" Line="42" Column="5" />
-      <File FileName="Assets/Scripts/BuildMenu.cs" Line="95" Column="30" />
-      <File FileName="Assets/Scripts/Grass.cs" Line="37" Column="4" />
+      <File FileName="Assets/Scripts/Prey_Hunger.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BuildMenu.cs" Line="94" Column="3" />
+      <File FileName="Assets/Scripts/Grass.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Predator_Hunger.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Health.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SpawnPredator.cs" Line="137" Column="57" />
-      <File FileName="Assets/Scripts/HintBoard.cs" Line="44" Column="16" />
+      <File FileName="Assets/Scripts/SpawnPredator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HintBoard.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GameOverWall.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Soil.cs" Line="28" Column="37" />
+      <File FileName="Assets/Scripts/Soil.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/BuildInfo.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/HerbivoreObject.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/DefaultVelocity.cs" Line="1" Column="1" />
