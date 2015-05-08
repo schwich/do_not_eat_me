@@ -102,7 +102,7 @@ public class SpawnPredator : MonoBehaviour
 	{
 		int[,] spawnArray = new int[,] {
 										{2, 0, 1, 0}, 
-										{3, 2, 0, 0}, 
+										{13, 2, 0, 0}, 
 										{15, 0, 0, 3},
 										{10, 0, 1, 0},
 										{13, 3, 0, 0},
