@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\BuildInfo.cs" />
      <Compile Include="Assets\Scripts\BuildMenu.cs" />
      <Compile Include="Assets\Scripts\CarnivoreObject.cs" />
+     <Compile Include="Assets\Scripts\Coin.cs" />
      <Compile Include="Assets\Scripts\DefaultVelocity.cs" />
      <Compile Include="Assets\Scripts\GameOverWall.cs" />
      <Compile Include="Assets\Scripts\Grass.cs" />

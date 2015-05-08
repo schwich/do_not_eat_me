@@ -120,8 +120,7 @@ public class SpawnPredator : MonoBehaviour
 	{
 		int[,] spawnArray = new int[,] {
 										{2, 0, 1, 0}, 
-			{13, 2, 0, 0}}; 
-										/*
+										{13, 2, 0, 0}, 
 										{15, 0, 0, 3},
 										{10, 0, 1, 0},
 										{13, 3, 0, 0},
@@ -141,9 +140,9 @@ public class SpawnPredator : MonoBehaviour
 										{17, 0, 4, 0},
 										{32, 5, 0, 0},
 										{45, 0, 0, 5}};
-										*/
+										
 		
-		//Debug.Log (spawnArray);
+
 		
 		currIndex = 0;
 		nextSpawn = 0;

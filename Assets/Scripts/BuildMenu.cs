@@ -92,16 +92,22 @@ public class BuildMenu : MonoBehaviour {
 	public void CalculateCoins() {
 		int newCoins = (score / 100);
 
-		int numCoinsToDrop = newCoins - coins;
+		int numCoinsDrop = (newCoins - coins);
 
-		dropCoins (numCoinsToDrop);
+		if (newCoins > 0) {
+			dropCoins (newCoins);
+	
+		}
+
 	}
 
 	void dropCoins(int numCoins) {
 		//Drop numCoins from screen
-		Debug.Log ("DropCoins: " + numCoins);
+		//Debug.Log ("DropCoins: " + numCoins);
 		coins += numCoins;
 
+		Vector3 spawnPoint = new Vector3 (8f, 3.3f, 0f);
+		Instantiate(Resources.Load("Prefabs/SpinCoin"), spawnPoint,  Quaternion.identity);
 	}
 
 
