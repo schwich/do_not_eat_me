@@ -41,7 +41,7 @@ public class BuildMenu : MonoBehaviour {
 		GUILayout.BeginHorizontal ("box");
 		
 		// draw score counter
-		GUILayout.Button (new GUIContent ("Score: " + score.ToString ()), GUILayout.Height(70));
+		GUILayout.Button (new GUIContent ("Coins: " + coins.ToString ()), GUILayout.Height(70));
 		
 		// end GUI for score menu
 		GUILayout.EndHorizontal ();
@@ -100,9 +100,15 @@ public class BuildMenu : MonoBehaviour {
 	void dropCoins(int numCoins) {
 		//Drop numCoins from screen
 		Debug.Log ("DropCoins: " + numCoins);
+		coins += numCoins;
 
 	}
 
+
+	public void endGame() {
+		Debug.Log ("Game ended with X coins: " + coins);
+
+	}
 	// Update is called once per frame
 	void Update () {
 	

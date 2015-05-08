@@ -18,6 +18,11 @@ public class SpawnPredator : MonoBehaviour
 
 	bool gameOver = false;
 
+	bool spawnedLastPredator = false;
+
+	GameObject buildMenu;
+	BuildMenu buildMenuScript;
+
 	/*
 	 * hintBoard = GameObject.Find ("HintBoard");
 		hintBoardScript = hintBoard.GetComponent<HintBoard>();
@@ -29,6 +34,19 @@ public class SpawnPredator : MonoBehaviour
 		if (!gameOver) {
 			time += Time.deltaTime;
 			//Debug.Log (time);
+
+			if (spawnedLastPredator) {
+
+				GameObject[] arr = GameObject.FindGameObjectsWithTag("Carnivore");
+
+				if (arr.Length == 0) {
+					buildMenu = GameObject.Find ("MainCamera");
+					buildMenuScript = buildMenu.GetComponent<BuildMenu>();
+
+					gameOver = true;
+					buildMenuScript.endGame();
+				}
+			}
 		}
 	}
 
@@ -102,7 +120,8 @@ public class SpawnPredator : MonoBehaviour
 	{
 		int[,] spawnArray = new int[,] {
 										{2, 0, 1, 0}, 
-										{13, 2, 0, 0}, 
+			{13, 2, 0, 0}}; 
+										/*
 										{15, 0, 0, 3},
 										{10, 0, 1, 0},
 										{13, 3, 0, 0},
@@ -122,6 +141,7 @@ public class SpawnPredator : MonoBehaviour
 										{17, 0, 4, 0},
 										{32, 5, 0, 0},
 										{45, 0, 0, 5}};
+										*/
 		
 		//Debug.Log (spawnArray);
 		
@@ -166,7 +186,10 @@ public class SpawnPredator : MonoBehaviour
 			}
 		}
 
-		//No more predators, Win game!
+		spawnedLastPredator = true;
+
 	}
+
+
 }
 
