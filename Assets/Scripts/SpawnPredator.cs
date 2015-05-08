@@ -168,7 +168,6 @@ public class SpawnPredator : MonoBehaviour
 										{45, 0, 0, 5}};
 										
 
-		
 
 		
 		currIndex = 0;
