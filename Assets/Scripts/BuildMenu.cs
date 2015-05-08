@@ -96,7 +96,6 @@ public class BuildMenu : MonoBehaviour {
 
 		if (newCoins > 0) {
 			dropCoins (newCoins);
-	
 		}
 
 	}
@@ -113,6 +112,11 @@ public class BuildMenu : MonoBehaviour {
 
 	public void endGame() {
 		Debug.Log ("Game ended with X coins: " + coins);
+
+		//LOBBY TEAM, PUT YOUR RETURN CODE HERE, PASS BACK
+		//coins variable
+
+
 
 	}
 	// Update is called once per frame
